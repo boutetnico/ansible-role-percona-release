@@ -1,0 +1,5 @@
+---
+percona_release_dependencies:
+  - gnupg
+percona_release_repositories: []
+percona_release_version: latest
