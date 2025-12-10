@@ -7,7 +7,7 @@
 
 - name: Install percona release
   ansible.builtin.apt:
-    deb: "https://repo.percona.com/apt/percona-release_{{ percona_release_version }}.{{ ansible_distribution_release }}_all.deb"
+    deb: "https://repo.percona.com/apt/percona-release_{{ percona_release_version }}.{{ ansible_facts['distribution_release'] }}_all.deb"
     state: present
   environment:
     PERCONA_TELEMETRY_DISABLE: "1"
