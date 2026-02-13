@@ -5,4 +5,4 @@
   roles:
     - role: boutetnico.percona_release
       percona_release_repositories:
-        - ps-8x-innovation
+        - ps-84-lts

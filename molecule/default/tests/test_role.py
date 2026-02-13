@@ -29,7 +29,7 @@ def test_percona_release_show_command(host):
 @pytest.mark.parametrize(
     "name",
     [
-        ("ps-8x-innovation"),
+        ("ps-84-lts"),
     ],
 )
 def test_repositories_enabled(host, name):
