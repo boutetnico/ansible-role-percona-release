@@ -20,7 +20,7 @@
 
 - name: Enable Percona repository
   ansible.builtin.command: "percona-release enable {{ item }} release"
-  changed_when: false
+  changed_when: true
   loop: "{{ percona_release_repositories }}"
   when: item not in percona_release_show.stdout
   notify: Update apt cache
